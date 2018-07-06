@@ -15,7 +15,7 @@ namespace ConsoleApp1
 
             if (x != 0)
             {
-                if ((checkPos(x) && checkPos(n)))
+                if ((checkNum(x) && checkNum(n)))
                 {
                     while (x <= n)
                     {
@@ -38,15 +38,9 @@ namespace ConsoleApp1
             return res;
         }
 
-        static bool checkPos(int x)
+        static bool checkNum(int x)
         {
             if (x >= 0) return true;
-            return false;
-        }
-
-        static bool checkNeg(int x)
-        {
-            if (x < 0) return true;
             return false;
         }
 
